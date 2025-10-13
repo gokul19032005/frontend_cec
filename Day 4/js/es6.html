@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6 features</h1>
+    <p id="demo"></p>
+    <script>
+        let name="gokoo"
+        const pi = 3.145;
+        console.log(name,pi)
+
+        let age = 20;
+        let greeting = "hello ${name} you are ${age} years old.";
+        console.log(greeting);
+
+        const multiply = (a, b = 2) => a * b;
+        console.log("multiply:", multiply(5));
+
+        const number = [10,20,30];
+        const [x,y,z] = number;
+        console.log("destructed:", x, y, z);
+
+        const person = {
+            fname: "Bob", city: "NY"
+        };
+        const { fname, city } = person;
+        console.log("object Destructed:", fname, city);
+
+        const arr1 = [1, 2];
+        const arr2 = [3 ,4];
+        const combined = [...arr1, ...arr2];
+        console.log("combined Array:", combined)
+
+        const add = (a, b) => a+b;
+        console.log("Arrow Add", add(5, 10));
+
+        document.getElementById("demo").
+        innerText = greeting;
+    </script>
+</body>
+</html>
