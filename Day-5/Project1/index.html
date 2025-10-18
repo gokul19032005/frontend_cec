@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RCB CAFE</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">RCB CAFE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Book / Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <section class="container mt-4">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-3 shadow-sm">
+          <div class="carousel-item active">
+            <img
+              src="./images/RCB.jpg"
+              class="d-block w-100"
+              alt="RCB CAFE"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3> It is known for its cricket-themed decor and offers a "stadium-like" experience, especially during match screenings.</h3>
+              <p>The menu features fusion appetizers, drinks, cocktails, and other multi-cuisine options..</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/AMBIANS.jpg"
+              class="d-block w-100"
+              alt="AMBIANS"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>BEST AMBIANS WITH BEST ENERGY</h3>
+              <p>BEST PLACE FOR REST.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/download.jpg"
+              class="d-block w-100"
+              alt="SPIRIT"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>GOOD CRICKETING EXPERIENCE</h3>
+              <p> With Culture, food and nightlife.</p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Prev</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ABOUT + VIDEO -->
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2>About RCB CAFE</h2>
+          <p>
+            it is A bar and café operated by the Royal Challengers Bengaluru cricket franchise
+          </p>
+
+          <ul class="list-group mb-3">
+            <li class="list-group-item">DOOR STEP DELIVERY</li>
+            <li class="list-group-item">LIVE MATCH STREAMING </li>
+            <li class="list-group-item">MUSIC CONCERTS ON EVERY RCB MATCH DAY </li>
+          </ul>
+
+          <!-- Collapse for more details -->
+          <p>
+            <a
+              class="btn btn-outline-primary"
+              data-bs-toggle="collapse"
+              href="#moreAbout"
+              role="button"
+              >More about us</a
+            >
+          </p>
+          <div class="collapse" id="moreAbout">
+            <div class="card card-body">
+              Ambiance is known for its cricket-themed decor and offers a "stadium-like" experience, especially during match screenings.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <!-- Embedded video -->
+          <div class="ratio ratio-16x9 rounded-3 shadow-sm">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LcvnFkxBwLo?si=tcvcKwoMW4vOb4sl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="container mb-5">
+      <h3 class="mb-3"><u><b>our franchises near you</b></u></h3>
+      <div class="row g-3">
+        <div class="col-sm-6 col-md-4">
+          <div class="card overflow-hidden h-100">
+            <img
+              src="./images/download.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">MG ROAD </h5>
+              <p class="card-text">location:near the stadium.</p>
+              <button
+                class="btn btn-sm btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bookModal"
+                onclick="setPackage('table booking', 99)"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card overflow-hidden h-100">
+            <img
+              src="./images/download (1).jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Garuda mall</h5>
+              <p class="card-text">Food & culture inside the mall.</p>
+              <button
+                class="btn btn-sm btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bookModal"
+                onclick="setPackage('table booking', 80)"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="card overflow-hidden h-100">
+            <img
+              src="./images/images (1).jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">marathahali branch</h5>
+              <p class="card-text">best seat for the break.</p>
+              <button
+                class="btn btn-sm btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#bookModal"
+                onclick="setPackage('table booking', 100)"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIST + CTA -->
+    <section class="container mb-5">
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Top Reasons to choose our CAFE</h4>
+          <ol>
+            <li><b>best food for our customers</b></li>
+            <li><b> new cuisines</b></li>
+            <li><b>Meet new people of rcb franchise</b></li>
+          </ol>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="packages.html" class="btn btn-lg btn-success"
+            >See availability</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING MODAL (used by various buttons) -->
+    <div class="modal fade" id="bookModal" tabindex="-1">
+      <div class="modal-dialog">
+        <form
+          id="modalBookingForm"
+          class="modal-content"
+          onsubmit="handleModalBooking(event)"
+        >
+          <div class="modal-header">
+            <h5 class="modal-title">Quick Book</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" id="modalPackageName" />
+            <div class="mb-2">
+              <label class="form-label">Package</label>
+              <input
+                type="text"
+                id="modalPackage"
+                class="form-control"
+                readonly
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Price per day (USD)</label>
+              <input
+                type="number"
+                id="modalPrice"
+                class="form-control"
+                readonly
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Days</label>
+              <input
+                type="number"
+                id="modalDays"
+                class="form-control"
+                min="1"
+                value="1"
+                onchange="modalCalc()"
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Total</label>
+              <input
+                type="text"
+                id="modalTotal"
+                class="form-control"
+                readonly
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Your Email</label>
+              <input
+                type="email"
+                id="modalEmail"
+                required
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button class="btn btn-primary" type="submit">
+              Confirm Booking
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div>© <span id="year"></span> Wanderly — Explore with care</div>
+        <div>
+          <a href="#" class="text-light me-3">Privacy</a>
+          <a href="#" class="text-light">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS & dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
