@@ -1,0 +1,10 @@
+npm == node package manager
+
+npm create vite@latest react-app --template react
+
+package.json is dependency manager
+
+jsx -- javascript XML (virtual DOM)
+
+XML -- extended markup language
+
